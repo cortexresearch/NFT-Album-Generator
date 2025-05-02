@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    padding: 40px 0; /* Add padding to top and bottom */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.container {
+    background-color: #333333; /* Darker container background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 45%; /* Approximately 50% smaller than 90% */
+    max-width: 300px; /* Approximately 50% smaller than 600px */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px auto; /* Center logo and add space below */
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+h1 {
+    color: #ffffff; /* White heading text */
+}
+
+p {
+    color: #cccccc; /* Lighter text for paragraphs */
+}
+
+.drop-area {
+    border: 2px dashed #666; /* Lighter dashed border */
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    background-color: #444444; /* Slightly lighter drop area background */
+}
+
+.drop-area.highlight {
+    background-color: #555555; /* Highlight color */
+}
+
+#file-list {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#file-list h2 {
+    color: #ffffff; /* White heading text */
+}
+
+#file-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#file-list li {
+    background-color: #555555; /* List item background */
+    border: 1px solid #666; /* List item border */
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff; /* List item text color */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #666666; /* Disabled button color */
+    cursor: not-allowed;
+}
+
+#download-link {
+    margin-top: 20px;
+}
+
+#download-link a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    font-size: 18px;
+}

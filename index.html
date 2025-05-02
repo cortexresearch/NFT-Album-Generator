@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Album Generator</title>
+    <link rel="icon" href="Logo.png" type="image/png">
+    <link rel="stylesheet" href="generator_ui.css">
+</head>
+<body>
+
+    <div class="container">
+        <a href="https://links.mindofmansa.com/" target="_blank">
+            <img src="Logo.png" alt="Logo" class="logo">
+        </a>
+        <h1>NFT Album Generator</h1>
+        <p>Drag and drop your album art images and music files below.</p>
+
+        <div id="drop-area" class="drop-area">
+            <p>Drag & Drop Files Here</p>
+            <input type="file" id="fileInput" multiple accept="image/*,audio/*" style="display: none;">
+            <button id="fileSelectButton">Or Select Files</button>
+        </div>
+
+        <div id="file-list">
+            <h2>Files Added:</h2>
+            <ul>
+                <!-- File names will be listed here -->
+            </ul>
+        </div>
+
+        <button id="generate-btn" disabled>Generate Website</button>
+        <div id="download-link" style="display: none;">
+            <a href="#" id="download-zip">Download Website Zip</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="generator_ui.js"></script>
+</body>
+</html>
